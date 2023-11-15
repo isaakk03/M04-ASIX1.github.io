@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header{
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    box-sizing: border-box;
+    height: 100px;
+    background-color: black;
+    z-index: 2;
+}
+
+
+.logo{
+    height: 60px;
+}
+
+.menu-item{
+    margin: 0 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    font-family: 'Londrina Solid', sans-serif;
+    float: right;
+    font-size: 25px;
+  
+}
+
+ /* Estilos para el menú desplegable */
+ .menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-title {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration: none;
+   
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+.menu-container:hover .menu-content {
+    display: block;
+    
+}
+
+/* Estilos para los elementos del menú */
+.menu-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color:black;
+}
+
+.menu-content a:hover {
+    background-color:black;
+    color: white;
+}
+
+.flecha{
+    width: 10px;
+}
+.color{ 
+    color: white;
+}
+
+.titulos{
+    font-size: 80px;
+    margin-left: 100px;
+    font-family: 'Londrina Solid', sans-serif;
+    color:black;
+    font-style: italic;
+}
+
+.MOTOS{
+    padding:110px;
+    background-color:rgb(155, 155, 155);
+    
+}
+.Imageness:hover{
+transform: scale(1.10);
+z-index: 2;
+}
+
+.btn{
+    position: relative;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 10px;
+    text-indent: 10px;
+    z-index: 1;
+}
+.btn-3{
+    transition: all 0.6s ease;
+}
+
+.btn-3::after{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 110%;
+    left: -10%;
+    top: 0;
+    transform: skew(20deg, 0deg);
+    background-color: #ffffff;
+    z-index: -1;
+    transition: all 0.4s ease;
+}
+
+.btn-3::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: skew(20deg, 0deg);
+    border: 3px solid white;
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.btn-3:hover::after{
+    background-color: #ffffff31;
+    transform: skew(20deg, 0deg) translateX(240px);
+    z-index: 1;
+}
+
+.btn-3:hover::before{
+    background-color: black;
+    border: 3px solid black;
+    transform: skew(20deg, 0deg) scale(1.1);
+    z-index: -1;
+}
+
+.texto{
+float: right;
+text-align: center;
+font-size: 20px;
+margin-top: 20%;
+color:black;
+}
+.texto1{
+    text-align: center;
+font-size: 20px;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 2%;
+    font-family: 'Londrina Solid', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacio entre los elementos */
+    margin-bottom: 0;
+}
+#nombres{
+    font-size: 30px;
+    text-align: left;
+    margin-right: 20px; /* Agrega un margen entre los párrafos y las imágenes */
+}
+.redes-sociales {
+    display: flex; /* Para alinear las imágenes horizontalmente */
+}
+.imagenesfooter{
+    width: 50px; /* Define el ancho de las imágenes */
+    margin-right: 10px; /* Agrega un margen entre las imágenes */
+
+}
+.fecha{
+    font-size: 15px;
+    text-align: left;
+    position: relative;
+    left: 65.5%;
+    bottom: -40px;
+
+}
+.logo{
+    margin: 0;
+    font-size: 30px;
+    text-align: left;
+    margin-right: 377px; 
+}

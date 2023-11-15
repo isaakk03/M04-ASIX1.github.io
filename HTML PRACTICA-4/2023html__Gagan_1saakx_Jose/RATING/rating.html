@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="rating.css">
+    <title>RATING</title>
+</head>
+
+<body>
+    <!--CABEZERA-->
+    <header id="header">
+        <a href="https://www.proven.cat/intraweb/index.php" target="_blank"><img src="../imagenes/logo.png" alt="" class="logo"></a>
+
+        <!--Menu Header-->
+        <div >
+            <a href="../CONTACTANOS/Contactanos.html"><p class="menu-item">Contactanos</p></a>
+            <div class="menu-container menu-item">
+                <a class="color" href="../OFERTAS/ofertas.html"><span class="menu-title ">Ofertas &nbsp;<img class="flecha" src="../imagenes/imagen.png" alt=""></span></a>
+                <div class="menu-content">
+                    <a href="../ofertas/COCHES/coches.html">Coches</a>
+                    <a href="../ofertas/MOTOS/Motoos.html">Motos</a>
+                </div>
+        </div>
+            
+        <div class="menu-container menu-item">
+            <a class="color" href="../MOTOS/motos.html"><span class="menu-title ">Motos &nbsp; <img class="flecha" src="../imagenes/imagen.png" alt=""></span></a>
+                <div class="menu-content">
+                    <a href="../MOTOS/DEPORTIVAS/Deportivas.html">Deportivas</a>
+                    <a href="../MOTOS/NUKEDS/nukeds.html">Nakeds</a>
+                </div>
+        </div>
+            
+        <div class="menu-container menu-item">
+            <a class="color" href="../coches/coches.html"><span class="menu-title ">Coches &nbsp;<img class="flecha" src="../imagenes/imagen.png" alt=""></span></a>
+            <div class="menu-content">
+                <a href="../coches/sport.html">Sport</a>
+                <a href="../coches/premium.html">Premium</a>
+                </div>
+        </div>
+        <a href="../home/home.html"><p class="menu-item">Home</p></a>
+    </header>
+
+    <!-- BODY -->
+    <div class="container">
+        <div class="post">
+        <div class="text">GRACIAS POR VALORAR EL PRODUCTO</div>
+    </div>
+        <div class="star-widget">
+        <input type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="fas fa-star"></label>
+        <form action="#">
+            <p></p>
+            <div class="textarea">
+            <textarea cols="30" placeholder="Describe tu opinión acerca del producto"></textarea>
+            </div>
+            <div class="btn">
+            <button type="submit">Publicar</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    <script>
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        btn.onclick = ()=>{
+        widget.style.display = "none";
+        post.style.display = "block";
+        return false;
+        }
+    </script>
+</body>
+</html>

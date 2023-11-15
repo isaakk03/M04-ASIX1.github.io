@@ -1,0 +1,77 @@
+h1{
+    text-align: center;
+    color: red;
+    font-size: 50px;
+}
+
+form {
+    border: 2px solid red;
+    
+}
+legend{
+    text-decoration: underline;
+    font-weight: bold;
+}
+p{
+    font-weight: bold;
+    font-size: 15px;
+}
+#uno{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: aqua;
+}
+#Camps{
+    font-style: italic;
+}
+#dos{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: pink;
+}
+#tres{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: yellow;
+}
+#cuatro{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: green;
+}
+#cinco{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: grey;
+}
+#seis{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: orangered;
+}
+#siete{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: brown;
+}
+#ocho{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: black;
+}

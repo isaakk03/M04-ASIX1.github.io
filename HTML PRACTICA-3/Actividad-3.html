@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario">
+    <meta name="author" content="isaacVa">
+    <link rel="stylesheet" href="Formulario.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>ENQUESTA PROFESSORAT</h1>
+<form method="post">
+<fieldset id="uno">
+    <legend>DADES PERSONALS</legend>
+    <p>Edat * <br>
+    <input type="number" name="Edat" placeholder="Inseriu l'edat" min="0" required></p>
+    <p>Email  <br>
+    <input type="email" name="Email" size="100">
+    </p>
+    <p>Contrassenya * <br>
+    <input type="password" name="Contrassenya" size="100" placeholder="Inseriu la Contrassenya" required >
+    </p>
+    <p>Data de naixement <br>
+    <input type="date" name="Data" style="width: 9.6%;">
+    </p>
+    <p id="Camps">* Camps obligatoris</p>
+</fieldset>
+<fieldset id="dos">
+    <legend>Moduls a evaluar</legend>
+    <select name="Moduls">
+        <option value="0">Seleccioneu</option>
+        <option value="1">M01</option>
+        <option value="2">M02</option>
+        <option value="3">M03</option>
+        <option value="4">M04</option>
+        <option value="5">M05</option>
+        <option value="6">M12</option>
+        <option value="7">M13</option>
+    </select>
+</fieldset>
+<fieldset id="tres">
+    <legend>Cicle</legend>
+    <input type="radio" name="Ciclo" value="ASIX">ASIX
+    <input type="radio" name="Ciclo" value="DAM">DAM
+    <input type="radio" name="Ciclo" value="DAW">DAW
+    <input type="radio" name="Ciclo" value="BIOINFO">BIOINFORMÁTICA
+</fieldset>
+<fieldset id="cuatro">
+    <legend>Professor a evaluar</legend>
+    <p>Nom Professor * <br>
+        <input type="text" name="Nombre" size="100" placeholder="Inseriu el nom">
+    </p>
+    <p>Grau de satisfacció del 0 al 10 <br>
+        <input type="range" name="rango"
+        min="1" max="10" step="1">
+    </p>
+    <p>Comentaris <br>
+        <textarea name="Comentaris"cols="98" rows="4" placeholder="Inseriu els comentaris"></textarea>
+    </p>
+</fieldset>
+<fieldset id="cinco">
+    <legend>Explica alguna cosa sobre tu</legend>
+    <p>Ets repetidor? <br>
+        <input type="checkbox" name="Casilla" value="Si" onclick="uncheckOther(this)">
+        <label for="Si">Si</label>
+        <input type="checkbox" name="Casilla" value="No" onclick="uncheckOther(this)">
+        <label for="no">No</label>
+        <script>
+            function uncheckOther(checkbox){
+                var checkboxes = document.getElementsByName('Casilla');
+                checkboxes.forEach(function(currentCheckbox) {
+                    if (currentCheckbox !==checkbox) {
+                        currentCheckbox.checked =false;
+                    }
+            });
+            }
+        </script>
+    </p>
+    <p>Color preferit <br>
+        <input type="color" name="ColorElegido">
+    </p>
+    <p>Dirección Web <br>
+        <input type="url" name="Web">
+    </p>
+    <p>Situació actual <br>
+        <select name="Situació" style="width: 9.6%;" >
+            <option value="0"></option>
+            <option value="1">Estudis</option>
+            <option value="2">FCT</option>
+            <option value="3">Dual</option>
+            <option value="4">Estudis-FCT</option>
+            <option value="5">treballo-Estudis</option>
+        </select>
+    </p>
+    <input type="file" name="archivo">
+</fieldset>
+<fieldset id="seis">
+    <legend>CURSOS EXTRES</legend>
+    <input type="checkbox" name="Cursos" value="Cloud computing">Cloud Computing
+    <input type="checkbox" name="Cursos" value="Big Data">Big Data
+    <input type="checkbox" name="Cursos" value="Unity 5">Unity 5
+</fieldset>
+<fieldset id="siete">
+    <legend>Data Enquesta</legend>
+    <p>Fecha <input type="date" name="DATA2">&nbsp;Hora <input type="time" name="Hora"></p>
+</fieldset>
+<fieldset id="ocho">
+    <input type="submit" value="Envia" onclick="mostrarAlerta()">
+    <script>
+        function mostrarAlerta() {
+            alert("¡Has enviat el formulari correctamen!");
+        }
+    </script>
+    <input type="reset" value="Esborra">
+    <input type="reset" value="surt">
+
+</fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,88 @@
+.amg{
+    position: relative;
+    padding-top: 100px;
+    left: 4%;
+}
+body{
+    font-family: 'Londrina Solid', sans-serif;
+    background-color:rgb(155, 155, 155);
+    overflow-x: hidden;
+}
+.menutitol{
+
+    padding-top: 150px;
+    padding-left: 10%;
+    font-size: 50px;
+}
+.menusubtitol{
+
+    padding-top: auto;
+    padding-left: 10%;
+    font-size: 25px;
+
+}
+.imagen{
+  
+    margin-top:  -191px;
+    transition: transform 0.3s;
+}
+.imagen:hover {
+  
+    transform: scale(1.1); 
+}
+
+.texto{
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    right: 10%;
+}
+
+.subtitulo{
+
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    font-size: 35px;
+}
+.titulo{
+
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    font-size: 50px;
+}
+.subtitulo2{
+
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    font-size: 35px;
+}
+.subtitulo3{
+
+    position: absolute;
+    top: 80%;
+    left: 55%;
+    font-size: 35px;
+}
+.texto2{
+    position: absolute;
+    top: 65%;
+    left: 55%;
+    right: 10%;
+}
+.fecha{
+    font-size: 15px;
+    text-align: left;
+    position: relative;
+    left: 65.5%;
+    bottom: -40px;
+
+}
+.logo{
+    margin: 0;
+    font-size: 30px;
+    text-align: left;
+    margin-right: 377px; 
+}

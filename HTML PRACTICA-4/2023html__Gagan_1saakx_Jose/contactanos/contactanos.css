@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Londrina Solid', sans-serif;
+}
+
+header{
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    box-sizing: border-box;
+    height: 100px;
+    background-color: black;
+    z-index: 2;
+}
+
+
+.logo{
+    height: 60px;
+}
+
+.menu-item{
+    margin: 0 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    font-family: 'Londrina Solid', sans-serif;
+    float: right;
+    font-size: 25px;
+  
+}
+
+ /* Estilos para el menú desplegable */
+ .menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-title {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration: none;
+   
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+.menu-container:hover .menu-content {
+    display: block;
+    
+}
+
+/* Estilos para los elementos del menú */
+.menu-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color:black;
+}
+
+.menu-content a:hover {
+    background-color:black;
+    color: white;
+}
+
+.flecha{
+    width: 10px;
+}
+.color{ 
+    color: white;
+}
+
+.titulos{
+    font-size: 80px;
+    margin-left: 100px;
+    font-family: 'Londrina Solid', sans-serif;
+    color:black;
+    font-style: italic;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    position: relative;
+    padding: 0%;
+    margin-bottom: 0;
+}
+
+video {
+    width: 100%;
+    height: auto;
+   padding: 0%;
+   margin-bottom: 0;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 10%; /* Cambiamos el valor a 10% para que el formulario esté a la izquierda */
+    transform: translate(0, -50%); /* Quitamos el ajuste horizontal */
+    text-align: center;
+    color: #fff;
+}
+form {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 100px;
+            border: 2px solid #fff; /* Añadimos un borde al formulario */
+            border-radius: 10px; /* Le damos esquinas redondeadas */
+        }
+
+        input[type="text"],input[type="email"],textarea,select
+        {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px; /* Le damos esquinas redondeadas a los campos de entrada */
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px; /* Le damos esquinas redondeadas al botón */
+            cursor: pointer;
+        }
+    
+
+
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 2%;
+    font-family: 'Londrina Solid', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacio entre los elementos */
+    margin-bottom: 0;
+}
+#nombres, #copy{
+    font-size: 30px;
+    text-align: left;
+    margin-right: 20px; /* Agrega un margen entre los párrafos y las imágenes */
+}
+.redes-sociales {
+    display: flex; /* Para alinear las imágenes horizontalmente */
+}
+.imagenesfooter{
+    width: 50px; /* Define el ancho de las imágenes */
+    margin-right: 10px; /* Agrega un margen entre las imágenes */
+
+}
+
+.fecha{
+    font-size: 15px;
+    text-align: left;
+    position: relative;
+    left: 65.5%;
+    bottom: -40px;
+
+}
+.logo{
+    margin: 0;
+    font-size: 30px;
+    text-align: left;
+    margin-right: 377px; 
+}
