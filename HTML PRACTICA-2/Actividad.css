@@ -1,0 +1,62 @@
+table {
+    background-color: white;
+    text-align: center;
+    width: 750px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    color:white;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration:none;
+    color: black;
+}
+a:hover{
+    color: white;
+}
+
+body{
+    background-image: url(./IMAGENES/proven.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin-top: 10%;
+}
+
+.Horas {
+    background-color: yellow;
+}
+.Patio {
+background-color: aqua;
+}
+.SinClase {
+    background-color: black;
+}
+.M04{
+    background-color: blueviolet;
+}
+.M02{
+    background-color: green;
+}
+.Tutoria{
+    background-color: rgb(159, 107, 207);
+}
+.M03{
+    background-color: orange;
+}
+.M01{
+    background-color: red;
+}
+.M05{
+    background-color: pink;
+}
+.M12 {
+    background-color: grey;
+}
+.M13 {
+    background-color: teal;
+}
