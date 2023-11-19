@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title>MENU</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Xulles.cat</a></li>
+                <li><a href="#">Copiar amb SWAG</a></li>
+                <li><a href="#">Excuses si et pillen</a></li>
+                <li>
+                  <a href="#">Tipus de xulles</a>
+                  <ul class="submenu">
+                    <li><a href="#">Corporals</a></li>
+                    <li><a href="#">En calculadora</a></li>
+                    <li><a href="#">En bolígraf</a></li>
+                    <li><a href="#">Electròniques</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Matèries</a>
+                  <ul class="submenu">
+                    <li><a href="#">Programació</a></li>
+                    <li><a href="#">Xarxes</a></li>
+                    <li><a href="#">Sistemes operatius</a></li>
+                    <li><a href="#">Hardware</a></li>
+                  </ul>
+                </li>
+              </ul>
+        </nav>
+        <div class="lupa" onclick="toggleSearch()">
+            <img src="./IMAGENES/lupa.png" alt="Lupa">
+            <input type="text" placeholder="Buscar">
+            <!-- Este script lo que hace es que cuando le das se despliegue el la barra de buscar es la manera que he encontrado para que salga-->
+            <script>
+                function toggleSearch() {
+                  var lupa = document.querySelector('.lupa');
+                  lupa.classList.toggle('active');
+                  if (lupa.classList.contains('active')) {
+                    lupa.querySelector('input').focus();
+                  }
+                }
+              </script>
+          </div>
+    </header>
+    <section>
+        <article>
+        <h2>Domina l'art de pendre molt més temps confeccionant complicats sistemes per a <br>
+        copiar del que et costaria aprovar el examens estudiant, perquè això és massa facil.</h2>
+        </article>
+     <div class="fotos">
+            <div class="fotos2">
+             <img src="./IMAGENES/xulla.jpeg" alt="" >
+      </div>
+      <div class="fotos2">
+            <img src="./IMAGENES/xulla1.jpeg" alt="" > 
+       </div>
+        <div class="fotos2">
+            <img src="./IMAGENES/xulla2.jpeg" alt="">
+        </div>
+    </section>
+</body>
+</html>
