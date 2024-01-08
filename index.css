@@ -28,7 +28,7 @@ video {
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.699);
     width: 500px;
-    min-height: 650px; /* Ajusta según tu necesidad mínima */
+    min-height: 700px; /* Ajusta según tu necesidad mínima */
     height: auto;
     border-radius: 10px; /* Asegúrate de cerrar correctamente el valor de la propiedad border-radius */
     border: 1px solid red;
